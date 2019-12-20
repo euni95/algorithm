@@ -1,0 +1,55 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.StringTokenizer;
+
+public class SW_1228_암호문1 { // [S/W 문제해결 기본] 8일차 - 암호문1
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//		br.readLine()
+		StringTokenizer st;
+//		int temp = Integer.parseInt(st.nextToken());
+//		st.hasMoreTokens()
+		
+		LinkedList<Integer> list = new LinkedList<>();
+		for (int t = 1; t <= 10; t++) {
+			list.clear();
+			int originNum = Integer.parseInt(br.readLine());
+			
+			st = new StringTokenizer(br.readLine());
+			for (int i = 0; i < originNum; i++) {
+				list.add(Integer.parseInt(st.nextToken()));
+			}
+
+			int commandTotalNum = Integer.parseInt(br.readLine());
+			int commandNum = 0;
+			int point = 0;
+			
+			st = new StringTokenizer(br.readLine());
+			for(int i = 0; i < commandTotalNum; i++) {
+				st.nextToken();
+				point = Integer.parseInt(st.nextToken());
+				commandNum = Integer.parseInt(st.nextToken());
+
+				for(int j = 0; j < commandNum; j++) {
+					list.add(point++, Integer.parseInt(st.nextToken()));
+				}
+			}
+			System.out.print("#" + t + " ");
+			Iterator<Integer> it = list.iterator();
+			int num; int cnt = 10;
+			while(it.hasNext()) {
+				num = it.next();
+				System.out.print(num + " ");
+				cnt--;
+				if(cnt == 0) break;
+			}
+			System.out.println();
+		}
+
+	}
+
+}
