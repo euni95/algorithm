@@ -73,8 +73,9 @@ public class B_18224_미로에갇힌건우 {
 				} else {
 					cnt++;
 				}
-				if((visited[tx][ty][day ? 0 : 1] & (1 << cnt)) > 0) continue;
-				visited[tx][ty][day ? 0 : 1] = (visited[tx][ty][day ? 0 : 1]) | (1 << cnt);
+
+				if((visited[tx][ty][day ? 1 : 0] & (1 << cnt)) > 0) continue;
+				visited[tx][ty][day ? 1 : 0] = (visited[tx][ty][day ? 1 : 0]) | (1 << cnt);
 				Point next = new Point(tx, ty, sun, moon, cnt, day);
 				q.add(next);
 			}
