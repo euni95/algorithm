@@ -78,12 +78,8 @@ public class B_18224_미로에갇힌건우2 {
 				}
 			}
 			if(cnt == m) {
-				if(!day) {
-					day = !day;
-				}else {
-					day = !day;
-					d++;
-				}
+				day = !day;
+				if(!day) d++;
 				cnt = 1;
 			} else {
 				cnt++;
