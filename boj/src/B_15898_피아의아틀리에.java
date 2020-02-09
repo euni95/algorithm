@@ -54,8 +54,7 @@ public class B_15898_피아의아틀리에 {
 			return;
 		}
 		for (int i = 0; i < n; i++) {
-			if (visited[i])
-				continue;
+			if (visited[i]) continue;
 			visited[i] = true;
 			order[depth] = i;
 			perm(depth + 1);
