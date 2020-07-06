@@ -15,6 +15,9 @@ local.properties
 .loadpath
 .recommenders
 
+_challenges/
+answer/
+
 # External tool builders
 .externalToolBuilders/
 
