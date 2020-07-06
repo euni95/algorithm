@@ -16,7 +16,7 @@ local.properties
 .recommenders
 
 _challenges/
-answer/
+_etc/
 
 # External tool builders
 .externalToolBuilders/
