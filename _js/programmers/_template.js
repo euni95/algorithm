@@ -5,5 +5,7 @@ function input() {
 }
 
 function solution() {
+	var answer = [];
 	console.log(answer);
+	return answer;
 }
