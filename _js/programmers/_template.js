@@ -1,11 +1,5 @@
-input();
-
-function input() {
-	solution();
-}
-
+console.log(solution());
 function solution() {
 	var answer = [];
-	console.log(answer);
 	return answer;
 }
