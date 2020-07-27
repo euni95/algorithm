@@ -4,6 +4,7 @@
 
 ### jscode ###
 .prettierrc
+_test.js
 
 ### Eclipse ###
 .metadata

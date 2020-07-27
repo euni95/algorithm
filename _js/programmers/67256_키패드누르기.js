@@ -37,7 +37,6 @@ function solution(numbers, hand) {
 			left = [curX, curY];
 			return acc + "L";
 		} else {
-			console.log(4);
 			right = [curX, curY];
 			return acc + "R";
 		}
