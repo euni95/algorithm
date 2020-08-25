@@ -7,7 +7,10 @@ function solution(m, musicinfos) {
 	m = replaceText(m);
 	for (var i of musicinfos) {
 		var music = i.split(",");
-		var time = (new Date(1, 1, 1, 1, music[1].substr(0, 2), music[1].substr(3, 2)) - new Date(1, 1, 1, 1, music[0].substr(0, 2), music[0].substr(3, 2))) / 1000;
+		var time =
+			(new Date(1, 1, 1, 1, music[1].substr(0, 2), music[1].substr(3, 2)) -
+				new Date(1, 1, 1, 1, music[0].substr(0, 2), music[0].substr(3, 2))) /
+			1000;
 		var lyrics = replaceText(music[3]);
 		var length = lyrics.length; // 노래 길이
 		var listen = lyrics;
@@ -36,5 +39,10 @@ function solution(m, musicinfos) {
 }
 
 function replaceText(text) {
-	return text.replace(/C#/g, "c").replace(/D#/g, "d").replace(/F#/g, "f").replace(/G#/g, "g").replace(/A#/g, "a");
+	return text
+		.replace(/C#/g, "c")
+		.replace(/D#/g, "d")
+		.replace(/F#/g, "f")
+		.replace(/G#/g, "g")
+		.replace(/A#/g, "a");
 }

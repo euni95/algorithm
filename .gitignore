@@ -5,6 +5,8 @@
 ### jscode ###
 .prettierrc
 _test.js
+_test.html
+_challenges/
 
 ### Eclipse ###
 .metadata
