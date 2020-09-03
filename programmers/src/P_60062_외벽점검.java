@@ -44,7 +44,9 @@ public class P_60062_외벽점검 {
 
 		public void perm(int[] p, boolean[] v, int idx) {
 			if (idx == dist.length) {
-				cleaning(0, p);
+				for(int i = 0; i < weakLen; i++) {
+					cleaning(i, p);
+				}
 				return;
 			}
 			for (int i = 0; i < dist.length; i++) {
