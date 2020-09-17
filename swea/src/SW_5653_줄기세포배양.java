@@ -46,7 +46,6 @@ public class SW_5653_줄기세포배양 {
 				for(int i = 0; i < qSize; i++) {
 					Point temp = q.poll();
 					
-					
 					if(temp.activeCnt == 0) {
 						for(int j = 0; j < 4; j++) {
 							int tx = temp.x + dx[j];
@@ -86,9 +85,9 @@ public class SW_5653_줄기세포배양 {
 			}
 			sb.append("#").append(t).append(" ").append(q.size() + yet.size()).append("\n");
 		}
-		
 		System.out.println(sb);
 	}
+	
 	static class Point {
 		int x, y, activeCnt, deathCnt;
 
