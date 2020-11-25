@@ -17,6 +17,11 @@ public class B_1600_말이되고픈원숭이 {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		W = Integer.parseInt(st.nextToken()); // 가로길이 (cols)
 		H = Integer.parseInt(st.nextToken()); // 세로길이 (rows)
+		if(W == 1 && H == 1) {
+			System.out.println(0);
+			System.exit(0);
+		}
+		
 		map = new int[H][W];
 		for (int i = 0; i < H; i++) {
 			st = new StringTokenizer(br.readLine());
